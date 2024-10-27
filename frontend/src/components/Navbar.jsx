@@ -9,7 +9,7 @@ import avatar from '../assets/avatar.png'
 
 const navigation = [
   {name: "Dashboard", href:"/dashboard"},
-  {name: "Orders", href:"/order"},
+  {name: "Orders", href:"/orders"},
   {name: "Cart", href:"/cart"},
   {name: "Checkout", href:"/checkout"}
 ]
@@ -53,7 +53,9 @@ export const Navbar = () => {
                         <ul className='py-2'>
                           {
                             navigation.map((item) => (
-                              <li key={item.name}>
+                              <li key={item.name} onClick={() => 
+                                setIsDropdownOpen(false)
+                              }>
                                 <Link to={item.href} className='block
                                 px-4 py-2 text-sm hover:bg-gray-100'>
                                   {item.name}
