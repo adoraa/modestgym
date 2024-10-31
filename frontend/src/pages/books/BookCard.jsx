@@ -41,7 +41,7 @@ export const BookCard = ({ book }) => {
               ${book?.oldPrice}
             </span>
           </p>
-          <button onClick={() => handleAddToCart(book)} className="btn-primary px-6 space-x-1 flex items-center gap-1 ">
+          <button onClick={() => handleAddToCart(book)} className="btn-primary px-6 space-x-1 flex items-center gap-1">
             <FiShoppingCart className="" />
             <span className="text-nowrap">Add to Cart</span>
           </button>
